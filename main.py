@@ -36,7 +36,7 @@ def NewScan():
 	print '\n\n'
 	range = raw_input('What range would you like to scan? ')
 	url = 'https://localhost:8834/scans/'
-	body = {"uuid": "9999","settings": {"name": "API TEST","description": "testing","emails": "mpickford@nettiude.com","enabled": "true","launch": "ON_DEMAND","folder_id": "1","policy_id": "1","scanner_id": "1","text_targets": "127.0.0.1"}}
+	body = {"uuid": "9999","settings": {"name": "API TEST","description": "testing","emails": "<email>","enabled": "true","launch": "ON_DEMAND","folder_id": "1","policy_id": "1","scanner_id": "1","text_targets": "127.0.0.1"}}
         r = requests.post(url,headers=headers,data=body,verify=False)
 	print r.text
 
